@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>    
+    <head>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>    
+    <body>
+        <div class="container">
+            <div class="play">
+                <button class="set-button">Settings</button>
+                <div class="board">                
+                </div>
+                <button class="clear-button">Clear skech</button>
+            </div>
+        </div>
+        <div class="set-modal">
+            <label>Please, set number of grid elements in a row.</label>
+            <div class="inputs">
+                <p>
+                <input type="checkbox" id="rainbow" name="rainbow"/>
+                <label for="rainbow">Rainbow on/off</label>
+                </p>
+                <input id="rows" value="64"/>
+            </div>            
+            <div class="modal-buttons">
+                <button id="cancel-button">Cancel</button>
+                <button id="ok-button">Set</button>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </body>
+</html>
