@@ -82,8 +82,8 @@ input {
 }
 input[type="checkbox"] {
     margin: 0;
-    padding: 0;
-    width: 0;
+    padding: 0;    
+    display: none;
 }
 input[type="checkbox"] + label:before {
     
@@ -106,8 +106,6 @@ input[type="checkbox"] + label:before {
   input[type="checkbox"]:focus + label::before {
       outline: rgb(59, 153, 252) auto 5px;
   }
-
-
 .set-modal button {
     width: 4rem;
     padding: 0.3rem;
@@ -120,6 +118,9 @@ input[type="checkbox"] + label:before {
 .modal-buttons {
     border-top: 1px solid red;
     padding-top: 1rem;
+}
+button::-moz-focus-inner {
+    border: none;
 }
 .shadow {
     position: fixed;
